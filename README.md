@@ -16,25 +16,34 @@ The system incorporates a trust-based network model, allowing users to interact 
 
 *Private offer publishing via Nostr*
 Users create buy or sell Bitcoin listings that are only visible to their direct contacts (followers) within the network.
+
 *Trust-based offer discovery*
 Trade opportunities are visible only to users within the creator’s social network, promoting privacy and trust.
+
 *Direct peer-to-peer communication (decentralized chat)*
 Secure and private interaction between buyers and sellers through encrypted messaging via Nostr.
+
 *Multi-signature escrow system (Bitcoin)*
 Transaction security ensured through a multi-sig mechanism, where funds are released only after both parties confirm.
+
 *Reputation and trust system*
 Transaction history and user ratings strengthen trust within the network and reduce risks.
+
 *Non-custodial P2P trading*
 The platform does not hold user funds, ensuring full ownership and control of assets.
+
 *Private financial social network (Vexl-like model)*
 Trade visibility is restricted to the user’s contact network, creating a safer and more controlled environment.
+
 *Decentralized and censorship-resistant infrastructure*
 Built on the Nostr protocol, eliminating central servers and increasing platform resilience.
 
 
 ## System Architecture
 Communication Layer: Nostr (relays and events)
+
 Trading Layer: Vexl-inspired trust-based model
+
 Financial Layer: Bitcoin with multi-sig escrow
 Frontend: Web and mobile applications
 Backend: Order management, user system, and reputation logic
