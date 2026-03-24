@@ -142,6 +142,7 @@ vite.config.ts.timestamp-*
 
 # Compiled files
 /target/
+target/
 
 # Cargo lock (opcional para binários)
 Cargo.lock
