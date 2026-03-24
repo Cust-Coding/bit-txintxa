@@ -137,3 +137,50 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+
+
+# Compiled files
+/target/
+
+# Cargo lock (opcional para binários)
+Cargo.lock
+
+# Rust Analyzer / IDE
+**/*.rs.bk
+
+# Editor configs
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Coverage / test outputs
+coverage/
+*.profraw
+
+# Rust debugging
+rustc-ice-*.txt
+
+# Generated binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# WASM (if used)
+*.wasm
