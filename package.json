@@ -1,8 +1,0 @@
-{
-  "name": "bit-txintxa",
-  "version": "1.0.0",
-  "description": "This project involves the development of a decentralized peer-to-peer (P2P) trading platform, built on the Nostr protocol and inspired by a social trust-based model similar to Vexl, with a strong focus on privacy, security, and user sovereignty. ",
-  "author": "@custcoding",
-  "license": "ISC",
-  "packageManager": "pnpm@10.32.1"
-}
