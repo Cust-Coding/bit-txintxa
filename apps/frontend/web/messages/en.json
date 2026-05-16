@@ -1,0 +1,14 @@
+{
+    "navegation":{
+        "sellbtc": "Sell BTC",
+        "buybtc": "Buy BTC"
+    },
+    "authbtn":{
+        "login": "Log in",
+        "signup": "Sign up"
+    },
+    "HomePage": {
+        "title": "P2P and self-custody exchange",
+        "btnContent": "New release: Bit Txintxa is now live!"
+    }
+}

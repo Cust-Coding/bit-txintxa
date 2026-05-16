@@ -1,0 +1,14 @@
+{
+     "navegation":{
+        "sellbtc": "Vender BTC",
+        "buybtc": "Comprar BTC"
+    },
+    "authbtn":{
+        "login": "Entrar",
+        "signup": "Registar-se"
+    },
+    "HomePage": {
+        "title": "Ola mundo",
+        "btnContent": "New release: Bit Txintxa is now live!"
+    }
+}
