@@ -20,8 +20,8 @@ export default function ToggleLangBtn() {
 
             <button 
                 onClick={() => router.replace(pathname, { locale: nextLocale })}
-                className="border-none rounded-sm ml-5 md:ml-0 flex items-center justify-around gap-1 p-2 cursor-pointer  bg-[linear-gradient(135deg,#f7931a,#e85d00)] transition"
-                style={{background:'',color:'#fff',cursor:'pointer',fontSize:12,fontWeight:700,letterSpacing:2}}>
+                className="text-neutral-300 border border-neutral-700 hover:bg-neutral-900 rounded-md md:ml-0 flex items-center justify-around gap-1 p-2 cursor-pointer   transition"
+                style={{background:'',cursor:'pointer',fontSize:12,fontWeight:700,letterSpacing:2}}>
                 <Languages size={18} />
                 {locale.toUpperCase()}
             </button>

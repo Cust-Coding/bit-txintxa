@@ -6,11 +6,12 @@ import ToggleLangBtn from '../button/ToggleLangBtn';
 
 export default function Header(){
 
-    const t = useTranslations('navegation');
+    const t = useTranslations('navlinks');
+    
 
     return(
     
-            <header className="fixed w-screen z-20 flex items-center justify-between px-8 py-7 md:px-12">
+            <header className="bg-black/10 backdrop-blur-sm fixed w-screen z-20 flex items-center justify-between px-8 py-7 md:px-12 border-b">
               
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#FF6A00] shadow-[0_0_30px_rgba(255,106,0,0.7)]">
@@ -28,7 +29,7 @@ export default function Header(){
               <Navbar/>
 
               
-              <div className="ListButton gap-3 hidden md:flex">
+              <div className="space-x-12 hidden md:flex">
                 <CTA_BTN/>
                 <ToggleLangBtn/>
               </div>

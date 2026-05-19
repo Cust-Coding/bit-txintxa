@@ -1,61 +1,62 @@
-"use client"
+"use client";
 
-import Link from 'next/link';
-import {useTranslations} from 'next-intl';
-import { Menu, X } from 'lucide-react';
-import CTA_BTN from './ctabtn';
-import ToggleLangBtn from '../button/ToggleLangBtn';
-import { useState } from 'react';
+import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Menu, X } from "lucide-react";
+import CTA_BTN from "./ctabtn";
+import ToggleLangBtn from "../button/ToggleLangBtn";
+import { useState } from "react";
 
 export default function Navbar() {
-
   const [open, setOpen] = useState(false);
-  const t = useTranslations('navegation');
+  const t = useTranslations("navlinks");
 
   return (
     <nav className=" ">
-      <div className="hidden items-center gap-5 py-2 px-4 rounded-full bg-gray-700/20 text-sm text-black/60 dark:text-white/60 md:flex">
-
+      <div className="hidden md:flex items-center gap-8  text-neutral-400">
         <Link
-          className="transition hover:text-[#ff6a00c4] focus:text-[#FF6A00] focus:font-semibold"
-          href="/sell-btc"
+          className="transition-colors duration-200 hover:text-[#ff6a00c4] focus:text-[#FF6A00] focus:font-semibold"
+          href="/#"
         >
-          {t('sellbtc')}
+          {t("howitworks")}
         </Link>
 
-        <span className='h-6 w-px bg-gray-500 block'></span>
-
         <Link
-          className="transition hover:text-[#ff6a00c4] focus:text-[#FF6A00] focus:font-semibold"
-          href="/buy-btc"
+          className="transition-colors duration-200 hover:text-[#ff6a00c4] focus:text-[#FF6A00] focus:font-semibold"
+          href="/#"
         >
-          {t('buybtc')}
+          {t("security")}
         </Link>
 
-
+        <Link
+          className="transition-colors duration-200 hover:text-[#ff6a00c4] focus:text-[#FF6A00] focus:font-semibold"
+          href="/#"
+        >
+          {t("gitHub")}
+        </Link>
       </div>
 
       <button
-        className="md:hidden toggleMenu cursor-pointer"
+        className="md:hidden toggleMenu cursor-pointer p-2 text-white/80 hover:text-orange-500 hover:bg-white/5 active:scale-95 rounded-xl transition-all duration-200 flex items-center justify-center border border-transparent active:border-white/10"
         onClick={() => setOpen(true)}
-        >
-        <Menu className='text-white'/>
+      >
+        <Menu size={24} strokeWidth={1.5} />
       </button>
 
-      <div 
+      <div
         onClick={() => setOpen(false)}
         className={`absolute huburgerMenu bg-gray-600/50 right-0 transition-opacity duration-500 top-0 bottom-0 w-screen h-screen flex justify-end items-end md:hidden ${
-          open ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}>
+          open ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        <div className="w-[75%] h-full bg-black">
+          <div className="relative w-full border-b cursor-pointer px-2 py-6 flex items-center justify-between ">
+            <ToggleLangBtn />
+            <X className="text-neutral-300 hover:bg-neutral-900 rounded-md cursor-pointer " />
+          </div>
 
-      <div className="w-[75%] h-full bg-black">
-
-        <button className='relative w-full border-b cursor-pointer py-8 px-4 flex items-center justify-end '>
-          <X className='hover:text-amber-50 text-white/30 cursor-pointer '/>
-        </button>
-
-        <div className="items-start gap-8 py-4 px-4 border-b text-md text-black/60 dark:text-white/60 flex flex-col">
-          <Link
+          <div className="items-center space-y-10 mt-8 py-4 px-4 text-md text-neutral-400 flex flex-col">
+            {/* <Link
             className="transition hover:text-[#ff6a00c4] focus:text-[#FF6A00] focus:font-semibold"
             href="/sell-btc"
           >
@@ -67,20 +68,33 @@ export default function Navbar() {
             href="/buy-btc"
           >
             {t('buybtc')}
-          </Link>
+          </Link> */}
+
+            <Link
+              className="transition-colors duration-200 hover:text-[#ff6a00c4] focus:text-[#FF6A00] focus:font-semibold"
+              href="/#"
+            >
+              {t("howitworks")}
+            </Link>
+
+            <Link
+              className="transition-colors duration-200 hover:text-[#ff6a00c4] focus:text-[#FF6A00] focus:font-semibold"
+              href="/#"
+            >
+              {t("security")}
+            </Link>
+
+            <Link
+              className="transition-colors duration-200 hover:text-[#ff6a00c4] focus:text-[#FF6A00] focus:font-semibold"
+              href="/#"
+            >
+              {t("gitHub")}
+            </Link>
+          </div>
+
+          <CTA_BTN />
         </div>
-
-        <CTA_BTN/>
-
-        <ToggleLangBtn/>
-
-
-        
       </div>
-
-      </div>
-      
-
     </nav>
   );
 }

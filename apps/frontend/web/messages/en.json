@@ -1,7 +1,12 @@
 {
     "navegation":{
         "sellbtc": "Sell BTC",
-        "buybtc": "Buy BTC",
+        "buybtc": "Buy BTC"
+    },
+     "navlinks": {
+        "howitworks": "How it works",
+        "security": "Security",
+        "gitHub": "GitHub",
         "sub-title": "P2P and decentralized exchange"
     },
     "authbtn":{
@@ -9,8 +14,8 @@
         "signup": "Sign up"
     },
     "HomePage": {
-        "first": "Direct buying and selling of Bitcoin",
-        "second": "Decentralized Bitcoin exchange",
-        "call-atention": "A decentralized Bitcoin peer-to-peer trading platform built on the Nostr protocol, where users trade directly without intermediaries and retain full control of their money."
+        "first": "Trade Bitcoin with no middlemen.",
+        "second": "Full privacy, by default.",
+        "call-atention": "The safest way to buy and sell Bitcoin directly with your trusted network. Retain full custody of your funds through end-to-end encrypted transactions no accounts, no censorship."
     }
 }

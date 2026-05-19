@@ -1,7 +1,12 @@
 {
      "navegation":{
         "sellbtc": "Vender BTC",
-        "buybtc": "Comprar BTC",
+        "buybtc": "Comprar BTC" 
+    },
+    "navlinks": {
+        "howitworks": "Como funciona",
+        "security": "Segurança",
+        "gitHub": "GitHub",
         "sub-title": "P2P e exchange descentralizada"
     },
     "authbtn":{
@@ -9,9 +14,9 @@
         "signup": "Registar-se"
     },
     "HomePage": {
-        "first": "Compra e venda direta de Bitcoin",
-        "second": "Exchange descentralizada de Bitcoin",
-        "call-atention": "Uma plataforma descentralizada de trading de Bitcoin peer-to-peer, construída sobre o protocolo Nostr, onde os utilizadores negoceiam diretamente sem intermediários e mantêm total controlo do seu dinheiro."
+        "first": "Negocia Bitcoin sem intermediários.",
+        "second": "Privacidade total, por padrão.",
+        "call-atention": "A forma mais segura de comprar e vender Bitcoin diretamente com a tua rede de confiança. Mantém a custódia total dos teus fundos em transações encriptadas de ponta a ponta, sem contas e sem censura."
     }
 }
 

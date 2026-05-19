@@ -1,27 +1,29 @@
-
 import { useTranslations } from "next-intl";
 
-export default function CTA_BTN(){
+interface CtaBtnProps {
+  onlyPrimary?: boolean;
+}
 
-    const t = useTranslations('authbtn');
+export default function CTA_BTN({ onlyPrimary = false }: CtaBtnProps) {
+  const t = useTranslations("authbtn");
 
-    return(
-        <div className="flex flex-col w-full p-8 md:p-0 my-5 md:my-0 border-b md:border-none md:flex-row md:w-auto gap-3 text-white">
+  return (
+    <div className="flex flex-col w-full p-4 md:p-0 my-5 md:my-0  md:flex-row md:w-auto gap-6">
+      {!onlyPrimary && (
+        <button
+          type="button"
+          className="text-neutral-400  border-neutral-700 rounded-md px-2 cursor-pointer transition-colors hover:text-white"
+        >
+          {t("login")}
+        </button>
+      )}
 
-            <button
-                type="button"
-                className="cursor-pointer transition hover:text-[#ff6a00] hover:font-semibold"
-            >
-                {t('login')}
-            </button>
-
-            <button
-                type="button"
-                className="bg-[#FF6A00]/60 px-3 py-1 rounded-sm cursor-pointer hover:bg-[#FF6A00] hover:font-semibold transition"
-            >
-                {t('signup')}
-            </button>
-
-        </div>
-    );
+      <button
+        type="button"
+        className="bg-orange-500 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-orange-600 transition-colors"
+      >
+        {t("signup")}
+      </button>
+    </div>
+  );
 }
